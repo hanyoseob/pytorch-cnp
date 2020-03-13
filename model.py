@@ -272,7 +272,7 @@ class UNet(nn.Module):
         dec1 = self.dec1_1(self.dec1_2(cat1))
 
         x = self.fc(dec1)
-        x = torch.sigmoid(x)
+        # x = torch.sigmoid(x)
 
         return x
 
@@ -390,7 +390,7 @@ class Hourglass(nn.Module):
         dec1 = self.dec1_1(self.dec1_2(unpool1))
 
         x = self.fc(dec1)
-        x = torch.sigmoid(x)
+        # x = torch.sigmoid(x)
 
         return x
 

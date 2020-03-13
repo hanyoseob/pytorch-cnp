@@ -40,7 +40,7 @@ parser.add_argument('--norm', type=str, default='inorm', dest='norm')
 parser.add_argument('--name_data', type=str, default='em', dest='name_data')
 
 parser.add_argument('--num_epoch', type=int,  default=300, dest='num_epoch')
-parser.add_argument('--batch_size', type=int, default=2, dest='batch_size')
+parser.add_argument('--batch_size', type=int, default=4, dest='batch_size')
 
 parser.add_argument('--lr_G', type=float, default=1e-4, dest='lr_G')
 
@@ -64,7 +64,7 @@ parser.add_argument('--nch_ker', type=int, default=64, dest='nch_ker')
 parser.add_argument('--data_type', default='float32', dest='data_type')
 
 parser.add_argument('--num_freq_disp', type=int,  default=3, dest='num_freq_disp')
-parser.add_argument('--num_freq_save', type=int,  default=10, dest='num_freq_save')
+parser.add_argument('--num_freq_save', type=int,  default=50, dest='num_freq_save')
 
 PARSER = Parser(parser)
 
